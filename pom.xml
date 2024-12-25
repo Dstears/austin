@@ -19,7 +19,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.6</version>
+        <version>2.6.15</version>
         <relativePath/>
     </parent>
 
@@ -66,7 +66,6 @@
         <alibaba-dingtalk-service-sdk.version>2.0.0</alibaba-dingtalk-service-sdk.version>
         <rocketmq-spring-boot-starter.version>2.2.2</rocketmq-spring-boot-starter.version>
         <hades-nacos-starter.version>1.0.4</hades-nacos-starter.version>
-        <spring-boot-configuration-processor.version>2.5.6</spring-boot-configuration-processor.version>
     </properties>
 
     <dependencyManagement>
@@ -167,6 +166,13 @@
                 <version>${nacos-config-spring-boot-starter.version}</version>
             </dependency>
 
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>2021.0.6.0</version>
+            </dependency>
+
             <!--apollo-->
             <dependency>
                 <groupId>com.ctrip.framework.apollo</groupId>
@@ -242,12 +248,45 @@
                 <artifactId>flink-table-api-java-bridge</artifactId>
                 <version>${flink-table-api-java-bridge.version}</version>
             </dependency>
-
+            <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations -->
+            <dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>2.2.27</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.swagger/swagger-models -->
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-models</artifactId>
+                <version>1.6.14</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.swagger/swagger-annotations -->
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>1.6.14</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>2.9.2</version> <!-- 确保版本号与你的项目兼容 -->
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>2.9.2</version> <!-- 版本号应与springfox-swagger2相同 -->
+            </dependency>
             <!--Hive exec-->
             <dependency>
                 <groupId>org.apache.hive</groupId>
                 <artifactId>hive-exec</artifactId>
                 <version>${hive-exec.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-models -->
+            <dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-models</artifactId>
+                <version>2.2.27</version>
             </dependency>
 
             <!--微信服务号第三方SDK-->
@@ -306,12 +345,6 @@
                 <version>${hades-nacos-starter.version}</version>
             </dependency>
 
-            <!--Configuration Processor-->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-configuration-processor</artifactId>
-                <version>${spring-boot-configuration-processor.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 

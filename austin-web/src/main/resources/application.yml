@@ -1,0 +1,11 @@
+spring:
+  config:
+    import:
+      - nacos:application.properties
+  cloud:
+    nacos:
+      config:
+        server-addr: https://fairy-piggy.com
+        username: nacos
+        password: YUNhsuaq99qhs8ll
+        namespace: 56db5315-314a-4732-a6fc-a44e668fad36

@@ -103,6 +103,10 @@
         </encoder>
     </appender>
 
+    <root level="debug">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
     <!--test环境会写到graylog，dev默认不写graylog-->
     <springProfile name="dev">
         <root level="info">
