@@ -6,7 +6,7 @@
 
     <parent>
         <artifactId>austin</artifactId>
-        <groupId>com.java3y.austin</groupId>
+        <groupId>com.aldi.austin</groupId>
         <version>${revision}</version>
     </parent>
 
@@ -14,7 +14,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.java3y.austin</groupId>
+            <groupId>com.aldi.austin</groupId>
             <artifactId>austin-common</artifactId>
         </dependency>
 
@@ -79,11 +79,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.ctrip.framework.apollo</groupId>
-            <artifactId>apollo-client</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>cn.monitor4all</groupId>
             <artifactId>log-record-starter</artifactId>
         </dependency>
@@ -124,10 +119,6 @@
             <artifactId>weixin-java-miniapp</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>io.github.ZhongFuCheng3y</groupId>
-            <artifactId>hades-nacos-starter</artifactId>
-        </dependency>
     </dependencies>
 
 </project>

@@ -6,7 +6,7 @@
 
     <parent>
         <artifactId>austin</artifactId>
-        <groupId>com.java3y.austin</groupId>
+        <groupId>com.aldi.austin</groupId>
         <version>${revision}</version>
     </parent>
 
@@ -14,17 +14,17 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.java3y.austin</groupId>
+            <groupId>com.aldi.austin</groupId>
             <artifactId>austin-support</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.java3y.austin</groupId>
+            <groupId>com.aldi.austin</groupId>
             <artifactId>austin-service-api</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.java3y.austin</groupId>
+            <groupId>com.aldi.austin</groupId>
             <artifactId>austin-service-api-impl</artifactId>
         </dependency>
 
